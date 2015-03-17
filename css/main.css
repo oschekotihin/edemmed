@@ -1,0 +1,325 @@
+<style>
+.scroll-pane { overflow: auto; width: 99%; float:left; }
+.scroll-content { width: 2440px; float: left; }
+.scroll-content-item { height: 220px;  background: white;  float: left; margin: 10px; font-size: 1.1em; text-align: center; }
+.scroll-bar-wrap { clear: left; padding: 0 4px 0 2px; margin: 0 -1px -1px -1px; }
+.scroll-bar-wrap .ui-slider { background: none; border:0; height: 2em; margin: 0 auto;  }
+.scroll-bar-wrap .ui-handle-helper-parent { position: relative; width: 100%; height: 100%; margin: 0 auto; }
+.scroll-bar-wrap .ui-slider-handle { top:.2em; height: 1.5em; }
+.scroll-bar-wrap .ui-slider-handle .ui-icon { margin: -8px auto 0; position: relative; top: 50%; }
+body { background-color: #eff7fb;  overflow-x:hidden; 
+  margin: 0 auto;}
+header{  height: 635px; margin-bottom: 30px;  width: 1200px;
+  margin: 0 auto;}
+#wrapper_header{position: relative;
+  z-index: 200;
+  /* opacity: 0.99; */
+  float: left;
+  width: 1200px;}
+#header_logo{
+  	  width: 450px;
+  margin: 0;
+  float: left;
+  background-color: white;
+  height: 90px;
+}
+#header_logo img{float: left;  margin: 11px;}  
+#header_logo h2{float: left;font-size: 48px;  margin: 11px;}
+#header_logo p{  text-align: left;
+  margin-top: 27px;
+  margin-left: 21px;
+  width: 198px;
+  float: left;}
+#menu_top{float: left;
+  width: 750px;
+  height: 45px;
+  background: black;
+  opacity: 0.7;
+}  
+#header_info{  width: 720px;
+  height: 50px;
+  float: left;}
+#time{
+  width: 178px;
+  height: 50px;
+  float: left;
+    margin: 15px 11px 0 20px;
+  color: white;
+}
+#place{ 
+  width: 260px;
+  height: 50px;
+  float: left;
+    margin: 15px 11px 0 20px;
+  color: white;
+}
+#telephone{
+	  width: 170px;
+  height: 50px;
+  float: left;
+    margin: 15px 11px 0 0px;
+  color: white;
+}
+#header_slider{
+  position: absolute;
+  z-index: 100;
+  height: 550px;
+  float: left;
+  width: 1200px;
+}
+#wrapper_middle{
+	height: 100%;
+}
+footer{
+	  height: 400px;
+	  background-image: url(../img/footer-bg.png);
+	  max-width: 1600px;
+	  margin: 0 auto;
+}
+#content_top{  height: 420px;margin-bottom: 30px;  width: 1200px;
+  margin: 0 auto;}
+#content_menu{
+  height: 420px;
+  width: 280px;
+  margin-right: 35px;
+  background-color: white;
+  float: left;
+}
+#content_menu a{display: block; ;color: #566473;}
+#content_menu a:hover{color: #1d8bcd;display: block;padding-left: 10px;}
+
+#content_menu ul{  line-height: 28px;}
+#content_menu ul li{list-style: none;}
+#content_slider{
+  width: 570px;
+  float: left;
+  margin-right: 35px;
+}
+#content_form{
+  width: 280px;
+  height: 420px;
+  background: black;
+  float: left;
+}
+#content_middle{
+	  height: 400px;
+
+	    margin-bottom: 30px;
+	      width: 1200px;
+  margin: 0 auto;
+}
+#content_about{
+	  width: 580px;
+  height: 400px;
+  background: white;
+  float: left;
+    margin-right: 40px;
+}
+#content_ask{  width: 580px;
+  height: 400px;
+  float: left;
+  background: antiquewhite;}
+
+
+#wrapper{  height: 100%;
+  min-height: 1400px;
+  margin: 0 auto;}
+#content_bottom{
+background-image: url(../img/md-ft-bg.png);
+   margin: 0 auto;
+  /*width: 1200px;*/
+  height: 520px;
+ max-width: 1600px;
+}
+#menu_midlle div{
+	/*background: -moz-linear-gradient(#00BBD6, #EBFFFF);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#00BBD6), to(#EBFFFF));*/
+    background-image: linear-gradient(to bottom right,#4cb2ee,#1d81be);
+      width: 240px;
+  height: 100px;
+  float: left;
+}
+#menu_midlle div a{
+	display: block;
+	  width: 240px;
+  height: 100px;
+  color: white;
+}
+#menu_midlle div a img{
+	padding: 25px;
+}
+#menu_midlle div a p{
+	  float: right;
+  padding: 24px;
+}
+#menu_midlle{
+  height: 205px;
+  width: 1200px;
+  z-index: 300;
+  float: left;
+  position: absolute;
+  bottom: 100px;
+}
+#top_hide, #top_hide_last{display: none;}
+#bottom_hide, #bottom_hide_last{display: none;}
+
+#menu_midlle div:hover >div{display: block;   background-image: linear-gradient(to bottom right,#fff,#fff);}
+#menu_midlle div:hover{background: white; color: #4cb2ee;}
+#menu_midlle div a:hover{background: white; color: #4cb2ee;}
+.bloks{
+	width: 240px !important;
+	background: white;
+}
+#reviews{
+	  width: 1044px;
+  padding-left: 90px;
+}
+#content_bottom h2{
+  text-align: center;
+  color: white;
+}
+#footer_info{
+	  width: 270px;
+  height: 100%;
+  float: left;
+  color: white;
+    margin-right: 30px;
+}
+#footer_directions{
+	  width: 270px;
+  height: 100%;
+  float: left;
+  color: white;
+    margin-right: 30px;
+}
+#footer_directions ul{
+	  list-style-type: none;
+  line-height: 25px;
+  color: white;
+  padding: 0;
+}
+#footer_directions a{
+	  color: white;
+}
+#footer_therapy{
+		  width: 270px;
+  height: 100%;
+  float: left;
+  color: white;
+  margin-right: 30px;
+}
+#footer_therapy ul{
+	  list-style-type: none;
+  padding: 0;
+  line-height: 25px;
+}
+#footer_therapy a{
+	  color: #4cb2ee;
+}
+#footer_form{
+	  width: 270px;
+  height: 100%;
+  float: left;
+}
+#about_us_footer{
+	width: 100px;
+  height: 90px;
+}
+#bottom_logo{
+	height: 70px;
+}
+#bottom_logo img{float: left;}
+#bottom_logo h3{float: left;}
+#menu_footer{
+	  height: 90px;
+  border-bottom: 1px solid grey;
+}
+#about_us_footer{
+	float: left;
+}
+#about_us_footer a{
+	float: left;
+	color: white;
+}
+#reviews_footer{
+	width: 133px;
+  height: 90px;
+  float: left;
+}
+#reviews_footer a{
+	float: left;
+	color: white;
+}
+#bottom_hide{
+	background: white;
+  width: 481px !important;
+  height: 110px !important;
+  z-index: 100;
+  position: relative;
+}
+#top_hide{
+  background: white;
+  width: 481px !important;
+  height: 110px !important;
+  z-index: 100;
+  position: relative;
+    bottom: 210px;
+}
+#top_hide_last{
+	background: white;
+  width: 481px !important;
+  height: 110px !important;
+  z-index: 100;
+  position: relative;
+  bottom: 210px;
+  right: 241px;
+}
+#bottom_hide_last{
+	background: white;
+  width: 481px !important;
+  height: 110px !important;
+  z-index: 100;
+  position: relative;
+  right: 241px;
+}
+.bxslider span{
+	  display: block;
+  position: absolute;
+  top: 39px;
+  width: 400px;
+  margin-top: 78px;
+}
+#wrapper_footer{
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%
+
+}
+#content_bottom_center{
+	width: 1200px;
+	margin: 0 auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
