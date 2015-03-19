@@ -868,7 +868,7 @@ body .ui-tooltip {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	border: 1px solid #d3d3d3;
+	/*border: 1px solid #d3d3d3;*/
 	/*background: #e6e6e6 url("images/ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;*/
 	background:  url(../img/polzunok.png) ;
 	font-weight: normal;
@@ -899,21 +899,21 @@ body .ui-tooltip {
 .ui-state-focus a:hover,
 .ui-state-focus a:link,
 .ui-state-focus a:visited {
-	color: #212121;
+	/*color: #212121;*/
 	text-decoration: none;
 }
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 1px solid #aaaaaa;
-	background: #ffffff url("images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;
+	/*border: 1px solid #aaaaaa;*/
+	/*background: #ffffff url("images/ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x;*/
 	font-weight: normal;
-	color: #212121;
+	/*color: #212121;*/
 }
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
-	color: #212121;
+	/*color: #212121;*/
 	text-decoration: none;
 }
 
@@ -922,7 +922,7 @@ body .ui-tooltip {
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-	border: 1px solid #fcefa1;
+	/*border: 1px solid #fcefa1;*/
 	background: #fbf9ee url("images/ui-bg_glass_55_fbf9ee_1x400.png") 50% 50% repeat-x;
 	color: #363636;
 }
@@ -934,7 +934,7 @@ body .ui-tooltip {
 .ui-state-error,
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
-	border: 1px solid #cd0a0a;
+	/*border: 1px solid #cd0a0a;*/
 	background: #fef1ec url("images/ui-bg_glass_95_fef1ec_1x400.png") 50% 50% repeat-x;
 	color: #cd0a0a;
 }
@@ -991,10 +991,12 @@ body .ui-tooltip {
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url("images/ui-icons_454545_256x240.png");
+	/*background-image: url("images/ui-icons_454545_256x240.png");*/
+	border: none !important;
 }
 .ui-state-active .ui-icon {
-	background-image: url("images/ui-icons_454545_256x240.png");
+	/*background-image: url("images/ui-icons_454545_256x240.png");*/
+	border: none !important;
 }
 .ui-state-highlight .ui-icon {
 	background-image: url("images/ui-icons_2e83ff_256x240.png");

@@ -335,9 +335,10 @@ box-shadow:         0px 5px 5px 0px rgba(0, 0, 0, 0.45);
 	color: white;
 }
 #contakt_footer p{
-  color: white;
-  border-bottom: 1px solid grey;
-}
+  color: white;}
+#contakt_footer{
+ border-bottom: 1px solid grey;}
+
 #contakt_footer p:nth-child(1){
   font-size: 24px;
 }
@@ -447,10 +448,38 @@ display: block;
   height: 70px;
 
 }
+.bxslider  span a{
+  background: linear-gradient(to top,#30749c , #83acc5);
+  color: white;
+  display: block;
+  width: 110px;
+  height: 26px;
+  text-align: -webkit-center;
+  padding-top: 5px;
+  text-decoration: none;
+}
 
-
-
-
-
+.scroll-bar-wrap {
+  height: 50px;
+}
+.scroll-bar {
+  background: #277eab !important;
+  height: 4px !important;
+  display: block;
+}
+.ui-slider-range {
+  height: 4px !important;
+  background: rgb(102, 198, 255);
+}
+.ui-slider-handle {
+    height: 60px !important;
+  width: 60px !important;
+  position: absolute;
+  z-index: 200;
+  margin-top: -19px;
+}
+.scroll-content{
+    margin-bottom: 20px;
+}
 
 </style>
