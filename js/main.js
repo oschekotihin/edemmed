@@ -47,6 +47,12 @@ $(function() {
           scrollContent.css( "margin-left", parseInt( scrollContent.css( "margin-left" ), 10 ) + gap );
         }
     }
+    function sizeScrollbar() {
+      scrollbar.find( ".ui-slider-handle" ).css({
+        width: 70,
+        "margin-left": -30
+      });
+    }
  
     //change handle position on window resize
     $( window ).resize(function() {
