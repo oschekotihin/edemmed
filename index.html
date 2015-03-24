@@ -6,6 +6,7 @@
 		<script src="/js/jquery-1.8.2.min.js"></script>
 		<link rel="stylesheet" href="/css/jquery.bxslider.css">
 		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/fonts/fonts.css">
 		<link rel="stylesheet" href="/css/jquery.ui.css">	
 		<script src="/js/jQuery.ui.js"></script>		
 		<script src="/js/jquery.bxslider.js"></script>
@@ -30,46 +31,52 @@
 			</ul>
 		</div>
 		<nav id="menu_middle">
-			<div >
+			<ul>
+			<li>
 				<a href="">
 					<img src="/img/ginekologia.png"  />
-					<p>Гинекология</p>
+					<span>Гинекология</span>
 				</a>
-					<div id="top_hide"></div>
-			</div>
-			<div >
+					<span id="top_hide"></span>
+			</li>
+			<li >
 			<a href="">
 			<img src="/img/akuscherstvo.png" />
-			<p>Акушерство</p></a>
-				<div id="top_hide"></div>
-			</div>
-			<div>
+			<span>Акушерство</span></a>
+				<span id="top_hide"></span>
+			</li>
+			<li>
 				<a href="">
 				<img src="/img/mamologia.png" />
-				<p>Мамология</p></a>
-				<div id="top_hide"></div>
-			</div>
-			<div ><a href=""><img src="/img/urologia.png" /><p>Урология</p></a>
-				<div id="top_hide"></div>
-			</div>
-			<div ><a href=""><img src="/img/newrologia.png" /><p>Неврология</p></a>
-				<div id="top_hide_last"></div>
-			</div>
-			<div ><a href=""><img src="/img/terapiya.png" /><p>Терапия</p></a>
-				<div id="bottom_hide"></div>
-			</div>
-			<div ><a href=""><img src="/img/zub.png" /><p>Стоматология</p></a>
-				<div id="bottom_hide"></div>
-			</div>
-			<div ><a href=""><img src="/img/bolnichny-list.png" /><p>Больниынй лист</p></a>
-				<div id="bottom_hide"></div>
-			</div>
-			<div ><a href=""><img src="/img/usi.png" /><p>УЗИ</p></a>
-				<div id="bottom_hide"></div>
-			</div>
-			<div ><a href=""><img src="/img/analizy.png" /><p>Анализы</p></a>
-				<div id="bottom_hide_last"></div>
-			</div>
+				<span>Мамология</span></a>
+				<span id="top_hide"></span>
+			</li>
+			<li >
+				<a href="">
+					<img src="/img/urologia.png" />
+					<span>Урология</span>
+				</a>
+					<span id="top_hide"></span>
+			</li>
+			<li ><a href=""><img src="/img/newrologia.png" /><span>Неврология</span></a>
+				<span id="top_hide_last"></span>
+			</li>
+			<li ><a href=""><img src="/img/terapiya.png" /><span>Терапия</span></a>
+				<span id="bottom_hide"></span>
+			</li>
+			<li ><a href=""><img src="/img/zub.png" /><span>Стоматология</span></a>
+				<span id="bottom_hide"></span>
+			</li>
+			<li ><a href=""><img src="/img/bolnichny-list.png" /><span>Больниынй лист</span></a>
+				<span id="bottom_hide"></span>
+			</li>
+			<li ><a href=""><img src="/img/usi.png" /><span>УЗИ</span></a>
+				<span id="bottom_hide"></span>
+			</li>
+			<li ><a href=""><img src="/img/analizy.png" /><span>Анализы</span></a>
+				<span id="bottom_hide_last"></span>
+			</li>
+			</ul>
 		</nav>		
 		</div>
 	</header>
@@ -96,7 +103,13 @@
 				</div>
 				<div id="content_slider">
 					<ul class="bxslider bxslider_middle">
-					  <li><img src="/img/muzik.png" /></li>
+					  <li>
+					  	<img src="/img/muzik.png" />
+					  	<span class="title_slide">Болит спина?</span>
+					  	<span>Получи 50% скидку на обследование у врача</span>
+					  	<span>Узнайте, почему сильно болит низ спины (справа или слева), какиt заболевания являются причиной боли и как избавится от нее раз и навсегда.<a href="">Подробнее</a></span>
+					  	
+					  </li>
 					  <li><img src="/img/muzik.png" /></li>
 					  <li><img src="/img/muzik.png" /></li>
 					</ul>
@@ -233,6 +246,9 @@
 		</div>
 	</footer>
 <script type="text/javascript">	
+/*$(document).ready(function(){
+  $('.bxslider').bxSlider();});*/
+
 $('.bxslider_middle').bxSlider({
   buildPager: function(slideIndex){
     switch(slideIndex){
