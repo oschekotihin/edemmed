@@ -1,91 +1,111 @@
 ﻿<html>
-	<head>
-
-		 <meta http-equiv="Content-Type" "text/html; charset = utf-8"> 
-		 <meta http-equiv='Content-Language' content='ru'>
-		<script src="/js/jquery-1.8.2.min.js"></script>
-		<link rel="stylesheet" href="/css/jquery.bxslider.css">
-		<link rel="stylesheet" href="/css/main.css">
-		<link rel="stylesheet" href="/fonts/fonts.css">
-		<link rel="stylesheet" href="/css/jquery.ui.css">	
-		<script src="/js/jQuery.ui.js"></script>		
-		<script src="/js/jquery.bxslider.js"></script>
-		<script src="/js/main.js"></script>
-
-	</head>
+<head>
+	<meta http-equiv="Content-Type" "text/html; charset = utf-8"> 
+	<meta http-equiv='Content-Language' content='ru'>
+	<link rel="stylesheet" href="/css/jquery.bxslider.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/jquery.ui.css">
+	<script src="/js/jquery-1.8.2.min.js"></script>	
+	<script src="/js/jQuery.ui.js"></script>		
+	<script src="/js/jquery.bxslider.js"></script>
+	<script src="/js/main.js"></script>
+</head>
+<body>
 	<header>
-		<div id="wrapper_header">
-			<div id="header_logo"><img src="/img/logo.png" /><h2>Эдем</h2><p>Медецинский центр профилактики и лечения</p></div>
-			<nav id="menu_top"></nav>
+		<div class="wrapper">
+			<div id="logo">
+				<img src="/img/logo.png" />
+				<h2>Эдем</h2>
+				<p>Медецинский центр профилактики и лечения</p>
+			</div>
+			<nav id="topnav">
+				<ul>
+					<li><a href="/">О нас</a></li>
+					<li><a href="/">Лицензия</a></li>
+					<li><a href="/">Прейскурант</a></li>
+					<li><a href="/">Отзывы</a></li>
+					<li><a href="/">Наши врачи</a></li>
+					<li><a href="/">Контакты</a></li>
+				</ul>
+			</nav>
 			<div id="header_info">
 				<div id="time">Работаем с 9:00 по 21:00 Без выходных</div>
-				<div id="place">г.Москва м.Киевская, ул.Б.Дорогомиловская, д.9, к.2.</div>
+				<div id="place">г. Москва. м. Киевская, <br>ул. Б. Дорогомиловская, д.9, кор.2.</div>
 				<div id="telephone"><img src="/img/telephone.png">(495) 540-41-42</div>
+				<div class="clear"></div>
 			</div>
+			<div class="clear"></div>
 		</div>
 		<div id="header_slider">
-			<ul class="bxslider " >
-				<li><img class="bxslider_top" src="/img/top_bg.png" />
-					<span><h2>Ударно-волновая терапия</h2>Для лечения заболеваний опорно-двигательного аппарата специалисты Медецинского центра "Эдем" используютмедицинскую технологию - экстракорпоральная ударно-волновая терапияв Москве. Ударно волновая терапия позволяет не только исправить<a href="">Подробнее</a></span>
+			<ul class="bxslider01">
+				<li>
+					<h2>Ударно-волновая терапия</h2>
+					<p>Для лечения заболеваний опорно-двигательного аппарата специалисты Медецинского центра "Эдем" используютмедицинскую технологию - экстракорпоральная ударно-волновая терапияв Москве. Ударно волновая терапия позволяет не только исправить</p>
+					<a class="more" href="/">Подробнее</a>
+				</li>
+				<li>
+					<h2>Ударно-волновая терапия</h2>
+					<p>Для лечения заболеваний опорно-двигательного аппарата специалисты Медецинского центра "Эдем" используютмедицинскую технологию - экстракорпоральная ударно-волновая терапияв Москве. Ударно волновая терапия позволяет не только исправить</p>
+					<a class="more" href="/">Подробнее</a>
 				</li>
 			</ul>
 		</div>
 		<nav id="menu_middle">
 			<ul>
-			<li>
-				<a href="">
-					<img src="/img/ginekologia.png"  />
-					<span>Гинекология</span>
-				</a>
+				<li class="ginekologia">
+					<a href="">Гинекология</a>
+					<span id="top_hide">
+						<ul>
+							<li><a href="/">Лечение эрозии</a></li>
+							<li><a href="/">Медикаментозный аборт</a></li>
+							<li><a href="/">Ведение беременности</a></li>
+						</ul>
+					</span>
+				</li>
+				<li class="akuscherstvo">
+					<a href="">Акушерство</a>
 					<span id="top_hide"></span>
-			</li>
-			<li >
-			<a href="">
-			<img src="/img/akuscherstvo.png" />
-			<span>Акушерство</span></a>
-				<span id="top_hide"></span>
-			</li>
-			<li>
-				<a href="">
-				<img src="/img/mamologia.png" />
-				<span>Мамология</span></a>
-				<span id="top_hide"></span>
-			</li>
-			<li >
-				<a href="">
-					<img src="/img/urologia.png" />
-					<span>Урология</span>
-				</a>
+				</li>
+				<li class="mamologia">
+					<a href="">Мамология</a>
 					<span id="top_hide"></span>
-			</li>
-			<li ><a href=""><img src="/img/newrologia.png" /><span>Неврология</span></a>
-				<span id="top_hide_last"></span>
-			</li>
-			<li ><a href=""><img src="/img/terapiya.png" /><span>Терапия</span></a>
-				<span id="bottom_hide"></span>
-			</li>
-			<li ><a href=""><img src="/img/zub.png" /><span>Стоматология</span></a>
-				<span id="bottom_hide"></span>
-			</li>
-			<li ><a href=""><img src="/img/bolnichny-list.png" /><span>Больниынй лист</span></a>
-				<span id="bottom_hide"></span>
-			</li>
-			<li ><a href=""><img src="/img/usi.png" /><span>УЗИ</span></a>
-				<span id="bottom_hide"></span>
-			</li>
-			<li ><a href=""><img src="/img/analizy.png" /><span>Анализы</span></a>
-				<span id="bottom_hide_last"></span>
-			</li>
+				</li>
+				<li class="urologia">
+					<a href="">Урология</a>
+					<span id="top_hide"></span>
+				</li>
+				<li class="newrologia">
+					<a href="">Неврология</a>
+					<span id="top_hide_last"></span>
+				</li>
+				<li class="terapiya">
+					<a href="">Терапия</a>
+					<span id="bottom_hide"></span>
+				</li>
+				<li class="zub">
+					<a href="">Стоматология</a>
+					<span id="bottom_hide"></span>
+				</li>
+				<li class="bolnichny-list">
+					<a href="">Больничный лист</a>
+					<span id="bottom_hide"></span>
+				</li>
+				<li class="usi">
+					<a href="">УЗИ</a>
+					<span id="bottom_hide"></span>
+				</li>
+				<li class="analizy">
+					<a href="">Анализы</a>
+					<span id="bottom_hide_last"></span>
+				</li>
 			</ul>
-		</nav>		
-		</div>
+		</nav>
 	</header>
-	<body>
 	<div id="wrapper">
 		<div id="wrapper_middle">
 			<div id="content_top">
 				<div id="content_menu">
-				<h3>Ударно-волновая терапия</h3>
+					<h3>Ударно-волновая терапия</h3>
 					<ul>
 						<li><a href="">Артроз суставов</a></li>
 						<li><a href="">Артрит суставов</a></li>
@@ -107,18 +127,19 @@
 					  	<img src="/img/muzik.png" />
 					  	<span class="title_slide">Болит спина?</span>
 					  	<span>Получи 50% скидку на обследование у врача</span>
-					  	<span>Узнайте, почему сильно болит низ спины (справа или слева), какиt заболевания являются причиной боли и как избавится от нее раз и навсегда.<a href="">Подробнее</a></span>
-					  	
+					  	<span>Узнайте, почему сильно болит низ спины (справа или слева), какиt заболевания являются причиной боли и как избавится от нее раз и навсегда.<a href="">Подробнее</a></span>					  	
 					  </li>
 					  <li><img src="/img/muzik.png" /></li>
 					  <li><img src="/img/muzik.png" /></li>
 					</ul>
 				</div>
 				<div id="content_form"></div>
+				<div class="clear"></div>
 			</div>
 			<div id="content_middle">
 				<div id="content_about"></div>
 				<div id="content_ask"></div>
+				<div class="clear"></div>
 			</div>
 			<div id="content_bottom">
 				<div id="content_bottom_center">
@@ -127,16 +148,52 @@
 						<div id="slider_reviews">
 							<div class="scroll-pane ui-widget ui-widget-header ui-corner-all">
 						  		<div class="scroll-content">
-						    		<div class="scroll-content-item ui-widget-header bloks">Я проходил курс ударно волновой терапии на тазобедренные сустав</div>
-								    <div class="scroll-content-item ui-widget-header bloks">2</div>
-								    <div class="scroll-content-item ui-widget-header bloks">3</div>
-								    <div class="scroll-content-item ui-widget-header bloks">4</div>
-								    <div class="scroll-content-item ui-widget-header bloks">5</div>
-								    <div class="scroll-content-item ui-widget-header bloks">6</div>
-								    <div class="scroll-content-item ui-widget-header bloks">7</div>
-								    <div class="scroll-content-item ui-widget-header bloks">8</div>
-								    <div class="scroll-content-item ui-widget-header bloks">9</div>
-
+						    		<div class="scroll-content-item ui-widget-header bloks">
+						    			<h3>Илья С.</h3>
+						    			<div class="review-date">14.03.2014</div>
+						    			<p>Я проходил курс ударно волновой терапии на тазобедренные суставы (у меня коксоартроз) у Малахова Олега Олеговича, даже не ожидал такого положительного результата. Уже через 3 процедуры боль прошла, стало легче ходить. Сам врач очень компетентен и внимателен. Спасибо за помощь!</p>
+						    		</div>
+								    <div class="scroll-content-item ui-widget-header bloks">
+								    	<h3>Мягкова Алена</h3>
+						    			<div class="review-date">10.03.2014</div>
+						    			<p>Я проходил курс ударно волновой терапии на тазобедренные суставы (у меня коксоартроз) у Малахова Олега Олеговича, даже не ожидал такого положительного результата. Уже через 3 процедуры боль прошла, стало легче ходить. Сам врач очень компетентен и внимателен. Спасибо за помощь!</p>
+						    			<a href="/" class="review-more">Подробнее</a>
+								    </div>
+								    <div class="scroll-content-item ui-widget-header bloks">
+								    	<h3>Илья С.</h3>
+						    			<div class="review-date">14.03.2014</div>
+						    			<p>Я проходил курс ударно волновой терапии на тазобедренные суставы (у меня коксоартроз) у Малахова Олега Олеговича, даже не ожидал такого положительного результата. Уже через 3 процедуры боль прошла, стало легче ходить. Сам врач очень компетентен и внимателен. Спасибо за помощь!</p>
+								    </div>
+								    <div class="scroll-content-item ui-widget-header bloks">
+								    	<h3>Илья С.</h3>
+						    			<div class="review-date">14.03.2014</div>
+						    			<p>Я проходил курс ударно волновой терапии на тазобедренные суставы (у меня коксоартроз) у Малахова Олега Олеговича, даже не ожидал такого положительного результата. Уже через 3 процедуры боль прошла, стало легче ходить. Сам врач очень компетентен и внимателен. Спасибо за помощь!</p>
+								    </div>
+								    <div class="scroll-content-item ui-widget-header bloks">
+								    	<h3>Илья С.</h3>
+						    			<div class="review-date">14.03.2014</div>
+						    			<p>Я проходил курс ударно волновой терапии на тазобедренные суставы (у меня коксоартроз) у Малахова Олега Олеговича, даже не ожидал такого положительного результата. Уже через 3 процедуры боль прошла, стало легче ходить. Сам врач очень компетентен и внимателен. Спасибо за помощь!</p>
+								    </div>
+								    <div class="scroll-content-item ui-widget-header bloks">
+								    	<h3>Илья С.</h3>
+						    			<div class="review-date">14.03.2014</div>
+						    			<p>Я проходил курс ударно волновой терапии на тазобедренные суставы (у меня коксоартроз) у Малахова Олега Олеговича, даже не ожидал такого положительного результата. Уже через 3 процедуры боль прошла, стало легче ходить. Сам врач очень компетентен и внимателен. Спасибо за помощь!</p>
+								    </div>
+								    <div class="scroll-content-item ui-widget-header bloks">
+								    	<h3>Илья С.</h3>
+						    			<div class="review-date">14.03.2014</div>
+						    			<p>Я проходил курс ударно волновой терапии на тазобедренные суставы (у меня коксоартроз) у Малахова Олега Олеговича, даже не ожидал такого положительного результата. Уже через 3 процедуры боль прошла, стало легче ходить. Сам врач очень компетентен и внимателен. Спасибо за помощь!</p>
+								    </div>
+								    <div class="scroll-content-item ui-widget-header bloks">
+								    	<h3>Илья С.</h3>
+						    			<div class="review-date">14.03.2014</div>
+						    			<p>Я проходил курс ударно волновой терапии на тазобедренные суставы (у меня коксоартроз) у Малахова Олега Олеговича, даже не ожидал такого положительного результата. Уже через 3 процедуры боль прошла, стало легче ходить. Сам врач очень компетентен и внимателен. Спасибо за помощь!</p>
+								    </div>
+								    <div class="scroll-content-item ui-widget-header bloks">
+								    	<h3>Илья С.</h3>
+						    			<div class="review-date">14.03.2014</div>
+						    			<p>Я проходил курс ударно волновой терапии на тазобедренные суставы (у меня коксоартроз) у Малахова Олега Олеговича, даже не ожидал такого положительного результата. Уже через 3 процедуры боль прошла, стало легче ходить. Сам врач очень компетентен и внимателен. Спасибо за помощь!</p>
+								    </div>
 								</div>
 								<div class="scroll-bar-wrap ui-widget-content ui-corner-bottom">
 								    <div class="scroll-bar"></div>
@@ -144,123 +201,137 @@
 							</div>
 						</div>
 					</div>
+					<a href="/" class="add-review">Добавить свой отзыв</a>
 			    </div>
-			</div>
-			
-			
+			</div>			
 		</div>
-		</div>
+	</div>
 	<footer>
-	<div id="wrapper_footer">
-		<div id="footer_info">
-			<div id="bottom_logo"><img src="/img/logo.png"><h3>ЭДЕМ</h3></div>
-			<div id="menu_footer">
-				<div id="about_us_footer"><p>О нас</p><a href="">Лицензия</a><a href="">Прейскурант</a></div>
-				<div id="reviews_footer"><p>Отзывы</p><a href="">Наши врачи</a><a href="kontaсts.html">Контакты</a></div>
+		<div class="wrapper">
+			<div class="footer-block" id="footer_info">
+				<div id="bottom_logo">
+					<img src="/img/logo.png">
+					<h3>ЭДЕМ</h3>
+					<div class="clear"></div>
+				</div>
+				<div id="menu_footer">
+					<ul>
+						<li><a href="">О нас</a></li>
+						<li><a href="">Лицензия</a></li>
+						<li><a href="">Прейскурант</a></li>
+					</ul>
+					<ul>
+						<li><a href="">Отзывы</a></li>
+						<li><a href="">Наши врачи</a></li>
+						<li><a href="kontaсts.html">Контакты</a></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div id="contakt_footer">
+					<p class="footer-number">(495) 540-41-42</p>
+					<p>г. Москва. м. Киевская,<br>ул. Б. Дорогомиловская, д.9, кор.2. </p>
+					<p>Работаем с 9:00 по 21:00<br>Без выходных</p>
+				</div>
+				<div id="copyright">© 2015 Медицинский центр <br>профилактики и лечения «Эдем»</div>
 			</div>
-			<div id="contakt_footer">
-				<p>(495) 540-41-42</p>
-				<p>г. Москва.  м. Киевская, ул. Б. Дорогомиловская, д.9, кор.2. </p>
-				<p>Работаем с 9:00 по 21:00 Без выходных</p>
+			<div class="footer-block" id="footer_directions">
+				<h3>Направления</h3>
+				<ul>
+					<li>
+						<a href="">Гинекология</a>
+					</li>
+					<li>
+						<a href="">Акушерство</a>
+					</li>
+					<li>
+						<a href="">Маммология</a>
+					</li>
+					<li>
+						<a href="">Урология</a>
+					</li>
+					<li>
+						<a href="">Неврология</a>
+					</li>
+					<li>
+						<a href="">Терапия</a>
+					</li>
+					<li>
+						<a href="">Стоматология</a>
+					</li>
+					<li>
+						<a href="">Больничный лист</a>
+					</li>
+					<li>
+						<a href="">УЗИ</a>
+					</li>
+					<li>
+						<a href="">Анализы</a>
+					</li>
+				</ul>
 			</div>
-			<div id="copyright">© 2015 Медицинский центр   профилактики и лечения «Эдем»</div>
-		</div>
-		<div id="footer_directions">
-			<h3>Направления</h3>
-			<ul>
-				<li>
-					<a href="">Гинекология</a>
-				</li>
-				<li>
-					<a href="">Акушерство</a>
-				</li>
-				<li>
-					<a href="">Маммология</a>
-				</li>
-				<li>
-					<a href="">Урология</a>
-				</li>
-				<li>
-					<a href="">Неврология</a>
-				</li>
-				<li>
-					<a href="">Терапия</a>
-				</li>
-				<li>
-					<a href="">Стоматология</a>
-				</li>
-				<li>
-					<a href="">Больничный лист</a>
-				</li>
-				<li>
-					<a href="">УЗИ</a>
-				</li>
-				<li>
-					<a href="">Анализы</a>
-				</li>
-			</ul>
-		</div>
-		<div id="footer_therapy">
-			<h3>Ударно-волновая терапия</h3>
-			<ul>
-				<li>
-					<a href="">Артроз суставов</a>
-				</li>
-				<li>
-					<a href="">Артрит суставов</a>
-				</li>
-				<li>
-					<a href="">Коксартроз</a>
-				</li>
-				<li>
-					<a href="">Пяточные шпоры</a>
-				</li>
-				<li>
-					<a href="">Грыжа диска</a>
-				</li>
-				<li>
-					<a href="">Остеохондроз</a>
-				</li>
-				<li>
-					<a href="">Лечение позвоночника</a>
-				</li>
-				<li>
-					<a href="">Простатит</a>
-				</li>
-				<li>
-					<a href="">Целлюлит</a>
-				</li>
-				<li>
-					<a href="">Спортивные травмы</a>
-				</li>
-				<li>
-					<a href="">Заживление ран и ожогов</a>
-				</li>
-				<li>
-					<a href="">Боли в спине</a>
-				</li>
-			</ul>
-		</div>
-		<div id="footer_form">
-		</div>
+			<div class="footer-block" id="footer_therapy">
+				<h3>Ударно-волновая терапия</h3>
+				<ul>
+					<li>
+						<a href="">Артроз суставов</a>
+					</li>
+					<li>
+						<a href="">Артрит суставов</a>
+					</li>
+					<li>
+						<a href="">Коксартроз</a>
+					</li>
+					<li>
+						<a href="">Пяточные шпоры</a>
+					</li>
+					<li>
+						<a href="">Грыжа диска</a>
+					</li>
+					<li>
+						<a href="">Остеохондроз</a>
+					</li>
+					<li>
+						<a href="">Лечение позвоночника</a>
+					</li>
+					<li>
+						<a href="">Простатит</a>
+					</li>
+					<li>
+						<a href="">Целлюлит</a>
+					</li>
+					<li>
+						<a href="">Спортивные травмы</a>
+					</li>
+					<li>
+						<a href="">Заживление ран и ожогов</a>
+					</li>
+					<li>
+						<a href="">Боли в спине</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-block" id="footer_form"></div>
+			<div class="clear"></div>
 		</div>
 	</footer>
-<script type="text/javascript">	
-/*$(document).ready(function(){
-  $('.bxslider').bxSlider();});*/
+	<script type="text/javascript">	
+		$(document).ready(function(){
+		  $('.bxslider01').bxSlider({ pager: false, controls: true });
+		});
 
-$('.bxslider_middle').bxSlider({
-  buildPager: function(slideIndex){
-    switch(slideIndex){
-      case 0:
-        return '<img src="/img/muzik.png">';
-      case 1:
-        return '<img src="/img/muzik.png">';
-      case 2:
-        return '<img src="/img/muzik.png">';
-    }
-  }
-});</script>
-
-	</body>
+		$('.bxslider_middle').bxSlider({
+			controls: false,
+		  	buildPager: function(slideIndex){
+			    switch(slideIndex){
+			      case 0:
+			        return '<img src="/img/muzik.png">';
+			      case 1:
+			        return '<img src="/img/muzik.png">';
+			      case 2:
+			        return '<img src="/img/muzik.png">';
+			    }
+		  	}
+		});
+	</script>
+</body>
 </html>

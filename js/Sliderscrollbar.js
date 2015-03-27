@@ -1,4 +1,3 @@
-<script type="text/javascript">
   $(function() {
     //scrollpane parts
     var scrollPane = $( ".scroll-pane" ),
@@ -70,4 +69,3 @@
     //init scrollbar size
     setTimeout( sizeScrollbar, 10 );//safari wants a timeout
   });
-  </script>

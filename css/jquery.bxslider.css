@@ -36,7 +36,7 @@
 	box-shadow: 0 0 5px #ccc;
 	border:  5px solid #fff;
 	left: -5px;*/
-	background: #fff;
+	/*background: #fff;*/
 	
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -57,7 +57,7 @@
 
 .bx-wrapper .bx-loading {
 	min-height: 50px;
-	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	background: url(../img/bx_loader.gif) center center no-repeat #fff;
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -106,12 +106,22 @@
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(images/controls.png) no-repeat 0 -32px;
+	background: url(../img/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(images/controls.png) no-repeat -43px -32px;
+	background: url(../img/controls.png) no-repeat -43px -32px;
+}
+
+#header_slider .bx-wrapper .bx-prev {
+	left: 0;
+	background: url(../img/prev.png) no-repeat;
+}
+
+#header_slider .bx-wrapper .bx-next {
+	right: 0;
+	background: url(../img/next.png) no-repeat;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -132,6 +142,11 @@
 	text-indent: -9999px;
 	z-index: 9999;
 }
+#header_slider .bx-wrapper .bx-controls-direction a {
+	width: 47px;
+	height: 47px;
+	top: 188px;
+}
 
 .bx-wrapper .bx-controls-direction a.disabled {
 	display: none;
@@ -149,7 +164,7 @@
 	width: 10px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -11px no-repeat;
+	background: url(../img/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
 }
 
@@ -164,7 +179,7 @@
 	width: 9px;
 	height: 11px;
 	outline: 0;
-	background: url(images/controls.png) -86px -44px no-repeat;
+	background: url(../img/controls.png) -86px -44px no-repeat;
 	margin: 0 3px;
 }
 
@@ -202,4 +217,8 @@
 	display: block;
 	font-size: .85em;
 	padding: 10px;
+}
+.bxslider01 {
+	position: relative;
+	right: -1px;
 }
